@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ace_restuarant"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="407dp"
+        android:layout_height="368dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonMenu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/menu"
+            app:inner_text_size="20sp" />
+
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonOrder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/online_ordering"
+            app:inner_text_size="20sp" />
+
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonCount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/calorie_counter"
+            app:inner_text_size="20sp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonCatering"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/catering"
+            app:inner_text_size="20sp" />
+
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonMixer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/beverage_mixer"
+            app:inner_text_size="20sp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonReservations"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/reservations"
+
+            app:inner_text_size="20sp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/buttonGetDirections"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/get_directions"
+            app:inner_text_size="20sp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/aboutUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/about_us"
+            app:inner_text_size="20sp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="viewStart"
+            app:button_image_disabled="@drawable/arrowforwardicon"
+            app:button_image_enabled="@drawable/arrowforwardicon"
+            app:inner_text="@string/contact_us"
+            app:inner_text_size="20sp" />
+
+    </LinearLayout>
+
+    <!-- The below are for the image buttons at the bottom of the screen-->
+
+    <ImageButton
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAboutUs"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonContact"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonLocate"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonLocate"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/about" />
+
+    <ImageButton
+        android:id="@+id/imageButtonOrder"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="248dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/order" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCalories"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonOrder"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/calories" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCatering"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonCalories"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/catering" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMixer"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonCatering"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mixer" />
+
+    <ImageButton
+        android:id="@+id/imageButtonReserve"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        app:layout_constraintVertical_bias="0.14"
+        app:srcCompat="@drawable/reserve" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLocate"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonReserve"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonReserve"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/locate" />
+
+    <ImageButton
+        android:id="@+id/imageButtonContact"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonAboutUs"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/button_menu"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMenu"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMenu"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMenu" />
+
+    <TextView
+        android:id="@+id/orderOnlineText"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/orderButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonOrder"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonOrder"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonOrder" />
+
+    <TextView
+        android:id="@+id/caloriesText"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/calorieButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonCalories"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonCalories"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonCalories" />
+
+    <TextView
+        android:id="@+id/cateringText"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="@string/cateringButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonCatering"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonCatering"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonCatering" />
+
+
+    <TextView
+        android:id="@+id/mixerText"
+        android:layout_width="68dp"
+        android:layout_height="22dp"
+        android:text="@string/mixerButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMixer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMixer"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMixer" />
+
+    <TextView
+        android:id="@+id/reserveText"
+        android:layout_width="69dp"
+        android:layout_height="21dp"
+        android:text="@string/reserveButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonReserve"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonReserve"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonReserve" />
+
+    <TextView
+        android:id="@+id/locateText"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/locateButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonLocate"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonLocate"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonLocate" />
+
+    <TextView
+    android:id="@+id/aboutUsText"
+    android:layout_width="66dp"
+    android:layout_height="22dp"
+    android:text="@string/aboutButtonText"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/imageButtonAboutUs"
+    app:layout_constraintStart_toStartOf="@+id/imageButtonAboutUs"
+    app:layout_constraintTop_toBottomOf="@+id/imageButtonAboutUs" />
+
+    <TextView
+        android:id="@+id/contactText"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:text="@string/contactButtonText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonContact"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonContact"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonContact" />
+</androidx.constraintlayout.widget.ConstraintLayout>
